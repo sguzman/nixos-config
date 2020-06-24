@@ -14,18 +14,33 @@
   boot.extraModulePackages = [ ];
   boot.supportedFilesystems = [ "zfs" ];
 
-  fileSystems."/home/sguzman/data" = {
-    device = "storage";
-    fsType = "zfs";
-  };
-
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/80a1a22c-ebb1-4c4c-ae8b-7988915744d3";
+    { device = "/dev/disk/by-uuid/6416d4f1-57d7-4c2e-9279-3de087956fa5";
       fsType = "ext4";
     };
 
+  fileSystems."/boot" =
+    { device = "/dev/disk/by-uuid/4e73a4a7-cbf6-485c-9d24-29974a9e54e9";
+      fsType = "ext4";
+    };
+
+  fileSystems."/home/sguzman/data" =
+    { device = "storage";
+      fsType = "zfs";
+    };
+
+  fileSystems."/home/sguzman/data/dl" =
+    { device = "storage/dl";
+      fsType = "zfs";
+    };
+
+  fileSystems."/home/sguzman/data/db" =
+    { device = "storage/db";
+      fsType = "zfs";
+    };
+
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/6b3b1dca-7335-42da-b233-bb2c6b23d1ac"; }
+    [ { device = "/dev/disk/by-uuid/ac359d1c-1ab5-4432-b1ec-6361cfdeb584"; }
     ];
 
   nix.maxJobs = lib.mkDefault 8;
