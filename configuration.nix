@@ -176,6 +176,7 @@
     postgresql_12
     pprof
     protobuf3_11
+    pv
     pxz
     python38
     python38Packages.mps-youtube
