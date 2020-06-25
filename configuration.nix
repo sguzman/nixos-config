@@ -69,6 +69,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     alacritty
+    aria
     amass
     ant
     audacity
