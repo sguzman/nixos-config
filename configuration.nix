@@ -81,6 +81,8 @@
     coq
     dfc
     doas
+    nasm
+    yasm
     docker
     elmPackages.elm
     emacs
