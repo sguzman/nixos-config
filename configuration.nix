@@ -70,9 +70,11 @@
   environment.systemPackages = with pkgs; [
     alacritty
     amass
+    anki
     ant
     aria
     audacity
+    biber
     bind
     binutils
     blender
@@ -88,6 +90,7 @@
     cointop
     coq
     dfc
+    discord
     doas
     docker
     elmPackages.elm
@@ -112,6 +115,7 @@
     jre8_headless
     leiningen
     libzip
+    linux.dev
     linuxPackages.zfs
     lld_10
     lldb_10
@@ -134,6 +138,7 @@
     openjdk8_headless
     openssh
     openssl
+    openssl.dev
     pass
     pgcli
     pijul
@@ -143,28 +148,36 @@
     postgresql_12
     python38
     python38Packages.pip
+    python38Packages.pkgconfig
     python38Packages.unicorn
     python38Packages.virtualenv
     qbittorrent
     qbittorrent-nox
     qtpass
     radeontop
+    redshift
     rofi
     rofi-pass
     rustup
     sccache
+    screenfetch
     silver-searcher
     skim
     sqlite
     sqlmap
     stack
     taskwarrior
+    texlive.combined.scheme-full
     texstudio
     tmux
     translate-shell
     unicorn-emu
     visualvm
     vlc
+    w3m
+    wabt
+    wasmer
+    wasmtime
     watchexec
     wget
     xorg.xcbutil
