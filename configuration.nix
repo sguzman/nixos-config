@@ -88,7 +88,9 @@
     go
     htop
     libzip
-    linuxPackages_5_6.zfs
+    linuxHeaders
+    linux.dev
+    linuxPackages.zfs
     llvm
     lua
     luajit
@@ -101,11 +103,14 @@
     pipenv
     ponysay
     postgresql_12
-    python
     python38
+    radeontop
     qbittorrent
     qbittorrent-nox
     rofi
+    rofi-pass
+    qtpass
+    pass
     rustup
     sqlite
     stack
@@ -114,6 +119,7 @@
     vim
     vlc
     wget
+    python38Packages.pip
     zfs
     zlib
     zopfli
