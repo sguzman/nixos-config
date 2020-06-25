@@ -14,7 +14,7 @@
   boot.extraModulePackages = [ ];
   boot.supportedFilesystems = [ "zfs" ];
 
-  hardware.bluetooth.enable = true;
+  #hardware.bluetooth.enable = true;
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/6416d4f1-57d7-4c2e-9279-3de087956fa5";

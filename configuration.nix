@@ -257,7 +257,7 @@
   services.openssh.enable = true;
   services.postgresql.enable = true;
   services.bind.enable = true;
-  services.blueman.enable = true;
+  #services.blueman.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
