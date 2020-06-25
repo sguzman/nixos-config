@@ -124,6 +124,10 @@
     openjdk8_headless
     openssh
     openssl
+    blender
+    inkscape
+    audacity
+    gimp
     pass
     pijul
     pipenv
