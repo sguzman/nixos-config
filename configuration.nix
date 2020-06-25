@@ -71,8 +71,10 @@
     alacritty
     amass
     ant
+    audacity
     bind
     binutils
+    blender
     bonnie
     brotli
     btfs
@@ -97,9 +99,11 @@
     fish
     fortune
     gcc10
+    gimp
     git
     go
     htop
+    inkscape
     jq
     jre8_headless
     leiningen
@@ -124,10 +128,6 @@
     openjdk8_headless
     openssh
     openssl
-    blender
-    inkscape
-    audacity
-    gimp
     pass
     pijul
     pipenv
