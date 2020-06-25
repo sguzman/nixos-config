@@ -80,7 +80,7 @@
     dfc
     doas
     docker
-    elm
+    elmPackages.elm
     emacs
     fcitx
     fcitx-engines.anthy
