@@ -62,6 +62,8 @@
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
 
+  nixpkgs.config.allowUnfree = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
