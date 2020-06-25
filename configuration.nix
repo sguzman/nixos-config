@@ -69,9 +69,9 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     alacritty
-    aria
     amass
     ant
+    aria
     audacity
     bind
     binutils
@@ -79,6 +79,7 @@
     bonnie
     brotli
     btfs
+    capstone
     cayley
     chromiumDev
     clang_10
@@ -95,6 +96,7 @@
     fcitx-engines.anthy
     fcitx-engines.hangul
     fcitx-engines.libpinyin
+    fd
     feh
     file
     fish
@@ -105,6 +107,7 @@
     go
     htop
     inkscape
+    jemalloc
     jq
     jre8_headless
     leiningen
@@ -121,17 +124,21 @@
     mtm
     mupdf
     musl
+    mycli
     nasm
     neovim
     nerdfonts
     nmap
     nodejs-13_x
+    openarena
     openjdk8_headless
     openssh
     openssl
     pass
+    pgcli
     pijul
     pipenv
+    pkg-config
     ponysay
     postgresql_12
     python38
@@ -147,6 +154,7 @@
     rustup
     sccache
     silver-searcher
+    skim
     sqlite
     sqlmap
     stack
@@ -154,20 +162,21 @@
     texstudio
     tmux
     translate-shell
+    unicorn-emu
     visualvm
     vlc
+    watchexec
     wget
+    xorg.xcbutil
     yarn
     yasm
+    ytop
     zfs
     zlib
     zmap
     zopfli
     zpaq
     zstd
-#    litecli
-#    mycli
-#    pgcli
   ];
 
   # Env system-wide settings
