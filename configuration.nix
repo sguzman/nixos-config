@@ -84,10 +84,12 @@
     bonnie
     brotli
     btfs
+    bzip2
     capstone
     cayley
     chromiumDev
     clang_10
+    clisp
     clojure
     cmake
     cointop
@@ -108,12 +110,23 @@
     fish
     fortune
     gcc10
+    gforth
     gimp
     git
     go
+    googleearth
+    googler
+    graphviz
+    gzip
+    hakuneko
+    hashcat
+    hashcat-utils
     htop
+    hy
+    idris
     inkscape
     jemalloc
+    jetbrains.idea-community
     jq
     jre8_headless
     leiningen
@@ -125,8 +138,13 @@
     llvm
     lua5_3
     luajit
+    lz4
+    lzma
+    lzo
+    lzop
     mariadb
     maven
+    minecraft
     mpv
     mtm
     mupdf
@@ -135,6 +153,7 @@
     nasm
     neovim
     nerdfonts
+    newsboat
     nmap
     nodejs-13_x
     openarena
@@ -142,13 +161,19 @@
     openssh
     openssl
     openssl.dev
+    pagemon
+    parallel-rust
     pass
+    pbzip2
     pgcli
+    pigz
     pijul
     pipenv
     pkg-config
     ponysay
     postgresql_12
+    protobuf3_11
+    pxz
     python38
     python38Packages.pip
     python38Packages.pkgconfig
@@ -157,15 +182,19 @@
     qbittorrent
     qbittorrent-nox
     qtpass
+    racket
     radeontop
+    rc
     redshift
     rofi
     rofi-pass
+    runelite
     rustup
     sccache
     screenfetch
     silver-searcher
     skim
+    snappy
     sqlite
     sqlmap
     stack
@@ -175,6 +204,8 @@
     tmux
     translate-shell
     unicorn-emu
+    unrar
+    unzip
     visualvm
     vlc
     w3m
@@ -184,10 +215,15 @@
     watchexec
     wget
     xorg.xcbutil
+    xorg.xev
+    xorg.xinput
+    xorg.xkill
+    xorg.xrandr
     yarn
     yasm
     ytop
     zfs
+    zip
     zlib
     zmap
     zopfli
