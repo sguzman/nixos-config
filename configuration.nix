@@ -52,45 +52,55 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-	clang
-	cointop
-	coq
-	dfc
-	docker
-	doas
-	emacs
-	firefox
-	fish
-	fortune
-	gcc
-	git
-	go
-	htop
-	llvm
-	lua
-	luajit
-	mpv
-	neovim
-	nerdfonts
-	openssh
-	pipenv
-	ponysay
-	linuxPackages_5_6.zfs
-	postgresql_12
-	python
-	python38
-	rofi
-	rustup
-	stack
-	tmux
-	vim
-	vlc
-	wget
-	zfs
-#	litecli
-#	mycli
-#	pgcli
+    clang
+    chromiumDev
+    cointop
+    coq
+    dfc
+    docker
+    doas
+    emacs
+    fcitx
+    fcitx-engines.anthy
+    fcitx-engines.libpinyin
+    fish
+    fortune
+    gcc
+    git
+    go
+    htop
+    llvm
+    lua
+    luajit
+    mpv
+    musl
+    neovim
+    nerdfonts
+    openssh
+    pipenv
+    ponysay
+    linuxPackages_5_6.zfs
+    postgresql_12
+    python
+    python38
+    qbittorrent
+    qbittorrent-nox
+    rofi
+    rustup
+    stack
+    tmux
+    translate-shell
+    vim
+    vlc
+    wget
+    zfs
+#    litecli
+#    mycli
+#    pgcli
   ];
+
+  environment.variables.QT_IM_MODULE= "fcitx";
+  environment.variables.XMODIFIERS DEFAULT= "@im=fcitx";
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -135,8 +145,8 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.sguzman = {
-	isNormalUser = true;
-	extraGroups = [ "wheel" "docker" ]; # Enable ‘sudo’ for the user.
+    isNormalUser = true;
+    extraGroups = [ "wheel" "docker" ]; # Enable ‘sudo’ for the user.
   };
 
   # This value determines the NixOS release from which the default
