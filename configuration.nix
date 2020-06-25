@@ -68,45 +68,42 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     ant
-    brotli
     bonnie
+    brotli
     btfs
-    file
-    jq
-    sccache
-    elm
-    mariadb
-    cmake
-    lldb_10
     chromiumDev
     clang_10
     clojure
+    cmake
     cointop
     coq
     dfc
     doas
     docker
+    elm
     emacs
     fcitx
     fcitx-engines.anthy
     fcitx-engines.hangul
     fcitx-engines.libpinyin
     feh
+    file
     fish
     fortune
     gcc
     git
     go
     htop
+    jq
     jre8_headless
     leiningen
     libzip
-    linux.dev
-    linuxHeaders
     linuxPackages.zfs
+    lldb_10
     llvm
     lua5_3
     luajit
+    mariadb
     maven
     mpv
     mtm
@@ -115,6 +112,7 @@
     neovim
     nerdfonts
     nmap
+    nodejs-13_x
     openjdk8_headless
     openssh
     pass
@@ -131,6 +129,7 @@
     rofi
     rofi-pass
     rustup
+    sccache
     sqlite
     sqlmap
     stack
@@ -139,6 +138,7 @@
     visualvm
     vlc
     wget
+    yarn
     zfs
     zlib
     zmap
