@@ -31,7 +31,7 @@
   #networking.interfaces.wlp1s0.useDHCP = true;
   networking.enableIPv6 = false;
   networking.hosts = {
-    "127.0.0.1" = [ "local" "localhost" "schopenhauer" ];
+    "127.0.0.1" = [ "local" "localhost" "schopenhauer" "nixos" ];
   };
 
   networking.hostId = "6eb9ae74";
