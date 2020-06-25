@@ -172,6 +172,7 @@
     pkg-config
     ponysay
     postgresql_12
+    pprof
     protobuf3_11
     pxz
     python38
