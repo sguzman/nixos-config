@@ -69,8 +69,17 @@
   environment.systemPackages = with pkgs; [
     ant
     brotli
+    bonnie
+    btfs
+    file
+    jq
+    sccache
+    elm
+    mariadb
+    cmake
+    lldb_10
     chromiumDev
-    clang
+    clang_10
     clojure
     cointop
     coq
@@ -96,7 +105,7 @@
     linuxHeaders
     linuxPackages.zfs
     llvm
-    lua
+    lua5_3
     luajit
     maven
     mpv
