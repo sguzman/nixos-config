@@ -67,10 +67,12 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    alcritty
     ant
     bonnie
     brotli
     btfs
+    cayley
     chromiumDev
     clang_10
     clojure
@@ -116,6 +118,7 @@
     openjdk8_headless
     openssh
     pass
+    pijul
     pipenv
     ponysay
     postgresql_12
@@ -126,14 +129,15 @@
     qbittorrent-nox
     qtpass
     radeontop
-    taskwarrior
     rofi
     rofi-pass
     rustup
     sccache
+    silver-searcher
     sqlite
     sqlmap
     stack
+    taskwarrior
     tmux
     translate-shell
     visualvm
