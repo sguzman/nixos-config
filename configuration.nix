@@ -117,6 +117,7 @@
     nodejs-13_x
     openjdk8_headless
     openssh
+    openssl
     pass
     pijul
     pipenv
