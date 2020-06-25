@@ -126,6 +126,7 @@
     qbittorrent-nox
     qtpass
     radeontop
+    taskwarrior
     rofi
     rofi-pass
     rustup
