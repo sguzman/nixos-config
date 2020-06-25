@@ -94,6 +94,7 @@
     cmake
     cointop
     coq
+    darcs
     dfc
     discord
     doas
@@ -217,6 +218,7 @@
     wasmtime
     watchexec
     wget
+    wine
     xorg.xcbutil
     xorg.xev
     xorg.xinput
