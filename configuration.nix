@@ -67,9 +67,11 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    ant
     brotli
     chromiumDev
     clang
+    clojure
     cointop
     coq
     dfc
@@ -87,41 +89,50 @@
     git
     go
     htop
+    jre8_headless
+    leiningen
     libzip
-    linuxHeaders
     linux.dev
+    linuxHeaders
     linuxPackages.zfs
     llvm
     lua
     luajit
+    maven
     mpv
+    mtm
     mupdf
     musl
     neovim
     nerdfonts
+    nmap
+    openjdk8_headless
     openssh
+    pass
     pipenv
     ponysay
     postgresql_12
     python38
-    radeontop
+    python38Packages.pip
+    python38Packages.virtualenv
     qbittorrent
     qbittorrent-nox
+    qtpass
+    radeontop
     rofi
     rofi-pass
-    qtpass
-    pass
     rustup
     sqlite
+    sqlmap
     stack
     tmux
     translate-shell
-    vim
+    visualvm
     vlc
     wget
-    python38Packages.pip
     zfs
     zlib
+    zmap
     zopfli
     zpaq
     zstd
