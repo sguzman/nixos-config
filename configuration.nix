@@ -35,6 +35,7 @@
   };
 
   networking.hostId = "6eb9ae74";
+  networking.resolvconf.useLocalResolver = true;
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -68,7 +69,9 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     alacritty
+    amass
     ant
+    bind
     binutils
     bonnie
     brotli
@@ -102,6 +105,7 @@
     leiningen
     libzip
     linuxPackages.zfs
+    lld_10
     lldb_10
     llvm
     lua5_3
@@ -142,6 +146,7 @@
     sqlmap
     stack
     taskwarrior
+    texstudio
     tmux
     translate-shell
     visualvm
@@ -180,6 +185,7 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
   services.postgresql.enable = true;
+  services.bind.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
