@@ -175,6 +175,7 @@
     protobuf3_11
     pxz
     python38
+    python38Packages.mps-youtube
     python38Packages.pip
     python38Packages.pkgconfig
     python38Packages.unicorn
@@ -185,6 +186,7 @@
     racket
     radeontop
     rc
+    red
     redshift
     rofi
     rofi-pass
@@ -221,6 +223,8 @@
     xorg.xrandr
     yarn
     yasm
+    youtube-dl
+    ytcc
     ytop
     zfs
     zip
