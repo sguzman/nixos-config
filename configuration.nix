@@ -54,8 +54,11 @@
   fonts.fonts = with pkgs; [
     carlito
     dejavu_fonts
+    google-fonts
     ipafont
     kochi-substitute
+    roboto
+    roboto-mono
     source-code-pro
     ttf_bitstream_vera
   ];
