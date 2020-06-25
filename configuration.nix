@@ -69,6 +69,7 @@
   environment.systemPackages = with pkgs; [
     alacritty
     ant
+    binutils
     bonnie
     brotli
     btfs
@@ -81,8 +82,6 @@
     coq
     dfc
     doas
-    nasm
-    yasm
     docker
     elmPackages.elm
     emacs
@@ -113,6 +112,7 @@
     mtm
     mupdf
     musl
+    nasm
     neovim
     nerdfonts
     nmap
@@ -148,6 +148,7 @@
     vlc
     wget
     yarn
+    yasm
     zfs
     zlib
     zmap
