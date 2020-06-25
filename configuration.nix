@@ -176,6 +176,8 @@
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
 
+  services.xserver.videoDrivers = [ "radeon" ];
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.sguzman = {
     isNormalUser = true;
