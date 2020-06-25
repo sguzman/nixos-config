@@ -144,6 +144,7 @@
     lzo
     lzop
     mariadb
+    mathematica
     maven
     minecraft
     mpv
