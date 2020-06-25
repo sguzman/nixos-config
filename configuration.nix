@@ -17,7 +17,7 @@
   # boot.loader.grub.efiInstallAsRemovable = true;
   # boot.loader.efi.efiSysMountPoint = "/boot/efi";
   # Define on which hard drive you want to install Grub.
-  boot.loader.grub.device = "/dev/sda"; # or "nodev" for efi only
+  boot.loader.grub.device = "/dev/sde"; # or "nodev" for efi only
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -46,40 +46,57 @@
     keyMap = "us";
   };
 
+  i18n.inputMethod.enabled = "fcitx";
+  i18n.inputMethod.fcitx.engines = with pkgs.fcitx-engines; [ anthy hangul libpinyin ];
+
+  fonts.fonts = with pkgs; [
+    carlito
+    dejavu_fonts
+    ipafont
+    kochi-substitute
+    source-code-pro
+    ttf_bitstream_vera
+  ];
+
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    clang
+    brotli
     chromiumDev
+    clang
     cointop
     coq
     dfc
-    docker
     doas
+    docker
     emacs
     fcitx
     fcitx-engines.anthy
+    fcitx-engines.hangul
     fcitx-engines.libpinyin
+    feh
     fish
     fortune
     gcc
     git
     go
     htop
+    libzip
+    linuxPackages_5_6.zfs
     llvm
     lua
     luajit
     mpv
+    mupdf
     musl
     neovim
     nerdfonts
     openssh
     pipenv
     ponysay
-    linuxPackages_5_6.zfs
     postgresql_12
     python
     python38
@@ -87,6 +104,7 @@
     qbittorrent-nox
     rofi
     rustup
+    sqlite
     stack
     tmux
     translate-shell
@@ -94,13 +112,19 @@
     vlc
     wget
     zfs
+    zlib
+    zopfli
+    zpaq
+    zstd
 #    litecli
 #    mycli
 #    pgcli
   ];
 
-  environment.variables.QT_IM_MODULE= "fcitx";
-  environment.variables.XMODIFIERS DEFAULT= "@im=fcitx";
+  environment.variables.QT_IM_MODULE = "fcitx";
+  environment.variables.GTK_IM_MODULE = "fcitx";
+  environment.variables."XMODIFIERS DEFAULT" = "@im=fcitx";
+  environment.variables."XMODIFIER DEFAULT" = "@im=fcitx";
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
