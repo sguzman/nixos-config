@@ -94,7 +94,7 @@
     file
     fish
     fortune
-    gcc
+    gcc10
     git
     go
     htop
@@ -127,6 +127,7 @@
     postgresql_12
     python38
     python38Packages.pip
+    python38Packages.unicorn
     python38Packages.virtualenv
     qbittorrent
     qbittorrent-nox
@@ -158,6 +159,7 @@
 #    pgcli
   ];
 
+  # Env system-wide settings
   environment.variables.QT_IM_MODULE = "fcitx";
   environment.variables.GTK_IM_MODULE = "fcitx";
   environment.variables."XMODIFIERS DEFAULT" = "@im=fcitx";
