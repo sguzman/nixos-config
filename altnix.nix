@@ -137,7 +137,6 @@
     jre8_headless
     kotlin
     kubernetes
-    lean2
     leiningen
     libzip
     linux.dev
@@ -164,14 +163,14 @@
     nerdfonts
     newsboat
     nmap
-    nodejs-13_x
+    nodejs-14_x
+    nodePackages_latest.npm
     openarena
     openjdk8_headless
     openssh
     openssl
     openssl.dev
     pagemon
-    parallel-rust
     pass
     pbzip2
     pgcli
@@ -256,7 +255,6 @@
   services.openssh.enable = true;
   services.bind.enable = true;
   
-  services.kubernetes.enable = true;
   services.kubernetes = {
     apiserver.enable = true;
     controllerManager.enable = true;
@@ -264,10 +262,10 @@
     addonManager.enable = true;
     proxy.enable = true;
     flannel.enable = true;
-    dashboard.enable = true;
   };
   
   services.kubernetes.roles = [ "master" "node" ];
+  services.kubernetes.masterAddress = "127.0.0.1";
 
   services.kubernetes.apiserver.insecureBindAddress = "127.0.0.1";
   services.kubernetes.apiserver.insecurePort = 8080;
