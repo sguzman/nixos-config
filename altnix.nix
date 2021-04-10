@@ -21,14 +21,16 @@
   # Per-interface useDHCP will be mandatory in the future, so this generated config
   # replicates the default behaviour.
   #networking.useDHCP = false;
+  networking.networkmanager.enable = true;
   networking.interfaces.enp7s0.useDHCP = true;
   networking.enableIPv6 = false;
   networking.hosts = {
     "127.0.0.1" = [ "local" "localhost" "schopenhauer" "nixos" "hub" ];
   };
 
-  networking.hostId = "6eb9ae74";
+  #networking.hostId = "6eb9ae74";
   networking.resolvconf.useLocalResolver = true;
+  #networking.nameservers = [ ];
 
   networking.hostName = "hub"; # Define your hostname.
   networking.wireless.enable = false;  # Enables wireless support via wpa_supplicant.
@@ -49,13 +51,14 @@
 
   # Enable the GNOME 3 Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
+  services.xserver.displayManager.autoLogin.enable = true;
+  services.xserver.displayManager.autoLogin.user = "sguzman";
+
   services.xserver.desktopManager.gnome3.enable = true;
   
   services.xserver.videoDrivers = [ "nvidia" ];
-  
   virtualisation.docker.enable = true;
   
-
   # Configure keymap in X11
   services.xserver.layout = "us";
   # services.xserver.xkbOptions = "eurosign:e";
@@ -150,6 +153,7 @@
     lzo
     lzop
     mariadb
+    masscan
     mathematica
     maven
     minecraft
