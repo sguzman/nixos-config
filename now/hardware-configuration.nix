@@ -24,7 +24,7 @@
     };
 
   fileSystems."/home/sguzman/Code/machines/win/" = {
-    device = "/dev/sda2";
+    device = "/dev/disk/by-uuid/3C0CEA880CEA3C90";
     fsType = "ntfs";
   };
 
