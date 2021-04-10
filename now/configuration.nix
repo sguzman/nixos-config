@@ -89,6 +89,7 @@
     ant
     aria
     audacity
+    bat
     biber
     bind
     binutils
@@ -117,12 +118,15 @@
     file
     fish
     fortune
+    fossil
     gcc10
     gforth
     git
     go
+    go-pup
     google-chrome
     googler
+    gradle
     graphviz
     gzip
     hakuneko
@@ -141,9 +145,11 @@
     jq
     jre8_headless
     kotlin
+    lean2
     leiningen
     libzip
     linux.dev
+    ltiecli
     lld_11
     lldb_11
     llvm_11
@@ -155,6 +161,7 @@
     lzop
     mariadb
     masscan
+    massif-visualizer
     mathematica
     maven
     minecraft
@@ -164,6 +171,7 @@
     musl
     mycli
     nasm
+    neofetch
     neovim
     nerdfonts
     newsboat
@@ -202,6 +210,9 @@
     rofi-pass
     runelite
     rustup
+    sbt
+    scala
+    scheme48
     sccache
     screenfetch
     silver-searcher
@@ -211,13 +222,17 @@
     sqlmap
     stack
     taskwarrior
-    # texlive.combined.scheme-full
+    texlive.combined.scheme-full
     texstudio
     tmux
+    tor
+    torbrowser
+    torsocks
     translate-shell
     unicorn-emu
     unrar
     unzip
+    valgrind
     visualvm
     vlc
     w3m
@@ -259,6 +274,20 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
   services.bind.enable = true;
+  services.tor.enable = true;
+  services.postgresql.enable = true;
+  services.postgresql.enableTCPIP = true;
+  services.postgresql.ensureDatabases = [ "jr" "duolingo" "eoc" ];
+  services.postgresql.ensureUsers = [
+  {
+    name = "admin";
+    ensurePermissions = {
+      "DATABASE jr" = "ALL PRIVILEGES";
+      "DATABASE duolingo" = "ALL PRIVILEGES";
+      "DATABASE eoc" = "ALL PRIVILEGES";
+    };
+  }
+  ];
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
