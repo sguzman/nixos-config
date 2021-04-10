@@ -155,7 +155,7 @@
     lzop
     mariadb
     masscan
-    # mathematica
+    mathematica
     maven
     minecraft
     mpv
@@ -226,7 +226,7 @@
     wasmtime
     watchexec
     wget
-    wine
+    wineWowPackages.stable
     xorg.xcbutil
     xorg.xev
     xorg.xinput
