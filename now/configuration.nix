@@ -74,6 +74,13 @@
   # Enable touchpad support (enabled default in most desktopManager).
   services.xserver.libinput.enable = false;
 
+  security.doas.enable = true;
+  security.doas.extraRules = [
+    {
+        users = [ "sguzman" ]; noPass = true;
+    }
+  ];
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.sguzman = {
     isNormalUser = true;
@@ -121,6 +128,7 @@
     fossil
     gcc10
     gforth
+    ghostscript
     git
     go
     go-pup
@@ -145,11 +153,11 @@
     jq
     jre8_headless
     kotlin
-    lean2
+    lean
     leiningen
     libzip
     linux.dev
-    ltiecli
+    litecli
     lld_11
     lldb_11
     llvm_11
@@ -222,11 +230,9 @@
     sqlmap
     stack
     taskwarrior
-    texlive.combined.scheme-full
     texstudio
     tmux
     tor
-    torbrowser
     torsocks
     translate-shell
     unicorn-emu
